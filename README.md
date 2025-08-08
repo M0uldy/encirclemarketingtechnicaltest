@@ -12,8 +12,8 @@ https://www.national.co.uk
 Pandas was used to create the database with the following structure: 
 "Site", "Store", "Brand", "Pattern","Size","Type","Price"
   
-Where:
-\nSite - the website scraped  
+Where:  
+Site - the website scraped  
 Store - for dexel specific stores could be selected, in its current state the script will select the first store for stock however if `check_all_stores` is updated to True it will look through all other stores and distinguish any consequent data scraped by specifying the store it scraped from  
 Brand - brand of tire, this is taken from the alt text for the logos used in product listings  
 Pattern - tyre pattern  
