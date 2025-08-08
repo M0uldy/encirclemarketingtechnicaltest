@@ -1,4 +1,4 @@
-# encirclemarketingtechnicaltest
+# Encircle Marketing Technical Test
 These scrapers require the modules present at the top of each python file.
 
 They will attempt to iterate through each of the three 3-part tyre inputs provided in the technical test document and will skip one if the websites they are scraping can not find any results. This should allow for erroneous data entry not to disrupt a lengthy scraping run.
