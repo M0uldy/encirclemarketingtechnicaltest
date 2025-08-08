@@ -5,7 +5,7 @@ They will attempt to iterate through each of the three 3-part tyre inputs provid
   
 The third website (https://www.bythjul.com/) is in Swedish and while the robots.txt file does not explicitly ban scraping the tyre section of the website, they have cloudflare anti bot measures in place. It is possible they still allow scraping however as I do not know Swedish I am unable to check this in their terms and conditions. Therefore, the scraping of bythjul.com was not attempted.
   
-The two websites that were scraped therefore were:
+The two websites that were scraped therefore were:  
 www.dexel.co.uk  
 https://www.national.co.uk  
   
