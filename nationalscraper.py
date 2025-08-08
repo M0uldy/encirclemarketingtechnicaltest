@@ -12,7 +12,7 @@ data = pd.DataFrame(columns=["Site","Store", "Brand", "Pattern","Size","Type","P
 savefile = "scrapeddata.csv"
 
 URL = "https://www.national.co.uk/tyres-search/"#205-55-16 example on how sizes are used
-SITE = "national"
+SITE = "www.national.co.uk"
 
 for size in sizes:
     URL_with_size = URL + "-".join([str(i) for i in size])
@@ -45,8 +45,8 @@ for size in sizes:
         data.loc[len(data)] = newrow
 
 if not os.path.isfile(savefile):
-    data.to_csv(savefile, index=False, encoding="utf-8-sig")
+    data.to_csv(savefile, index=False)
 else:
-    data.to_csv(savefile, mode='a', header=False, index=False, encoding="utf-8-sig")
+    data.to_csv(savefile, mode='a', header=False, index=False)
 
 driver.quit()

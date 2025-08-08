@@ -16,7 +16,7 @@ data = pd.DataFrame(columns=["Site","Store", "Brand", "Pattern","Size","Type","P
 savefile = "scrapeddata.csv"
 
 URL = "https://www.dexel.co.uk/tyres#tyres"
-SITE = "dexel"
+SITE = "www.dexel.co.uk"
     
 for size in sizes:
     chrome_options = Options()
@@ -74,7 +74,7 @@ for size in sizes:
         page = 1
 
         while True:
-            time.sleep(1)
+            time.sleep(3)
             soup = BeautifulSoup(driver.page_source, 'html.parser')
             products = soup.select("div.tkf-product")
             for product in products:
